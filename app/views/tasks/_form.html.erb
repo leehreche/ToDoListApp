@@ -1,0 +1,28 @@
+<%=  form_with  model: @task, local: true do |form| %>
+    <p>
+        <%= form.label :title %>
+        <br>
+        <%= form.text_field :title %>
+    </p>
+    <p>
+        <%= form.label :description %>
+        <br>
+        <%= form.text_area :description %>
+    </p>
+    <p>
+        <%= form.label :due %>
+        <br>
+        <%= form.date_field :due %>
+    </p>
+    <p>
+        <%= form.label :done? %>
+        <br>
+        <%= form.select :done, [['Falso',0], ['Verdadeiro',1]] %>
+    </p>
+
+    <p>
+        <%= form.submit %>
+    </p>    
+<% end %>
+
+<%= link_to  'Voltar', tasks_path %>

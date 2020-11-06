@@ -20,7 +20,7 @@
 				<td><%= task.done %></td>
                                 <td><%= link_to 'Show', task %></td>
                                 <td><%= link_to 'Edit', edit_task_path(task) %></td>
-                                <td><%= link_to 'Delete', task, method: :delet, data: {confirm: 'Tem certeza?'} %></td>
+                                <td><%= link_to 'Delete', task, method: :delete, data: {confirm: 'Tem certeza?'} %></td>
                         </tr>
                 <% end %>
         </tbody>

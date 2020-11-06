@@ -1,0 +1,20 @@
+<h1> Visualizar Tarefa </h1>
+
+<p>
+    <strong >Title:</strong>
+    <%= @task.title %>
+</p>
+<p>
+    <strong >Description:</strong>
+    <%= @task.description %>
+</p>
+<p>
+    <strong >Due:</strong>
+    <%= @task.due %>
+</p>
+<p>
+    <strong >Done:</strong>
+    <%= @task.done %>
+</p>
+
+<%= link_to  'Voltar', tasks_path %>
